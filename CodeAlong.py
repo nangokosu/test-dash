@@ -14,7 +14,8 @@ options=[{"label":"Tesla","value":"TSLA"},{"label":"Microsoft","value":"MSFT"},{
 #dcc.Dropdown(id="stock-options",options=options,value="TSLA")
 
 
-app = Dash()
+app = Dash(__name__)
+server=app.server
 app.layout = html.Div([html.H1("Stock Ticker Dashboard"),
 #html.Div([html.H3("Enter a stock:"),
 #dcc.Input(id="my_stock_pick",value="TSLA")],style={"display":"inline-block"}),
