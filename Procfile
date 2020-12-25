@@ -1,1 +1,1 @@
-web: gunicorn CodeAlong:server
+web: gunicorn Dash_tutorial_3:server
