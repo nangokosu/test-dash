@@ -9,7 +9,8 @@ import plotly.express as px
 
 gapminder=pd.read_csv("C:/Users/nango/plotly_materials/Data/gapminderDataFiveYear.csv")
 
-new_app=Dash()
+new_app=Dash(__name__)
+server=app.server
 new_app.layout=html.Div(id="div-1",children=[
     dcc.Dropdown(id="dropdown-1",options=[{"label":continent,"value":continent} for continent in gapminder["continent"].unique()],value="Asia"),
     dcc.Dropdown(id="dropdown-2",options=[{"label":str(year),"value":year} for year in gapminder["year"].unique()],value=2002),
