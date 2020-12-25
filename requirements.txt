@@ -28,3 +28,4 @@ traitlets==4.3.2
 Werkzeug==0.15.4
 yfinance==0.1.54
 datetime
+json
