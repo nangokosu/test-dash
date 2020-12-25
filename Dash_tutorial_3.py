@@ -7,7 +7,7 @@ from dash.dependencies import Input, Output,State
 import pandas as pd
 import plotly.express as px
 
-gapminder=pd.read_csv("gapminderDataFiveYear.csv")
+gapminder=pd.read_csv("https://raw.githubusercontent.com/nangokosu/test-dash/master/gapminderDataFiveYear.csv")
 
 new_app=Dash(__name__)
 server=app.server
