@@ -52,4 +52,4 @@ def draw_stock(n_clicks,tickers,start_date,end_date):
         return px.line(x=stocks.Date,y=stocks.Closing_price,color=stocks.Ticker)
 
 if __name__ == "__main__":
-    app.run_server(host='127.0.0.1',debug=True)
+    app.run_server(debug=True)
