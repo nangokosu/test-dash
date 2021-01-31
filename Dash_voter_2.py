@@ -12,7 +12,6 @@ import dash_bootstrap_components as dbc
 #import datetime as datetime
 import plotly.express as px
 from datetime import date
-import json
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
