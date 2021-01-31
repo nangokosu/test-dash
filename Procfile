@@ -1,1 +1,1 @@
-web: gunicorn Dash_tutorial_3:server
+web: gunicorn Dash_voter_2:server
