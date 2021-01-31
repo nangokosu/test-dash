@@ -12,6 +12,9 @@ import dash_bootstrap_components as dbc
 #import datetime as datetime
 import plotly.express as px
 from datetime import date
+import os
+
+port = int(os.environ.get('PORT', 5000))
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -292,4 +295,4 @@ def create_wind_rose_suspend(value_drop):
     return html.Div(children=[html.Br(),graph])
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server(debug=True,port=port,host='0.0.0.0')
